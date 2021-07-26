@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './card1.dart';
 
 class Home extends StatefulWidget {
   const Home({Key key}) : super(key: key);
@@ -10,7 +11,7 @@ class _HomeState extends State<Home> {
   int _selectedIndex = 0;
 
   static List<Widget> pages = <Widget>[
-    Container(color: Colors.red[400]),
+   const Card1(),
     Container(color: Colors.lightGreenAccent),
     Container(color: Colors.blueAccent),
   ];
