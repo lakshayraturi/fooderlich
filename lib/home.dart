@@ -11,7 +11,7 @@ class _HomeState extends State<Home> {
   int _selectedIndex = 0;
 
   static List<Widget> pages = <Widget>[
-   const Card1(),
+    const Card1(),
     Container(color: Colors.lightGreenAccent),
     Container(color: Colors.blueAccent),
   ];
