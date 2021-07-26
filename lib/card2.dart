@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class Card2 extends StatelessWidget {
   const Card2({Key key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -18,6 +19,7 @@ class Card2 extends StatelessWidget {
           children: [
             // TODO 1: add author information
             // TODO 2: add Positioned text
+            const Text('Sometext'),
           ],
         ),
       ),
