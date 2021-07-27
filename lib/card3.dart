@@ -18,6 +18,12 @@ class Card3 extends StatelessWidget {
           children: [
             // TODO 5: ADD DARK OVERLAY BOXDECORATION
             // TODO 5: ADD CONTAINER, COLUMN, ICON AND TEXT
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.black.withOpacity(0.6),
+                borderRadius: const BorderRadius.all(Radius.circular(10)),
+              ),
+            ),
             // TODO 5: ADD CENTER WIDGET WITH CHIP WIDGET CHILDREN
           ],
         ),
