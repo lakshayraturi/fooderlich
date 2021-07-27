@@ -17,15 +17,12 @@ class Card3 extends StatelessWidget {
         ),
         child: Stack(
           children: [
-            // TODO 4: ADD DARK OVERLAY BOXDECORATION
-            // TODO 5: ADD CONTAINER, COLUMN, ICON AND TEXT
             Container(
               decoration: BoxDecoration(
                 color: Colors.black.withOpacity(0.6),
                 borderRadius: const BorderRadius.all(Radius.circular(10)),
               ),
             ),
-            // TODO 6: ADD CENTER WIDGET WITH CHIP WIDGET CHILDREN
             Container(
               padding: const EdgeInsets.all(16),
               child: Column(
@@ -36,6 +33,65 @@ class Card3 extends StatelessWidget {
                   Text('Recipe Trends',
                       style: FooderlichTheme.darkTextTheme.headline2),
                   const SizedBox(height: 30),
+                ],
+              ),
+            ),
+            Center(
+              child: Wrap(
+                alignment: WrapAlignment.start,
+                spacing: 12,
+                children: [
+                  Chip(
+                    label: Text('Healthy',
+                        style: FooderlichTheme.darkTextTheme.bodyText1),
+                    backgroundColor: Colors.black.withOpacity(0.7),
+                    onDeleted: () {
+                      print('Delete');
+                    },
+                  ),
+                  Chip(
+                    label: Text('Vegan',
+                        style: FooderlichTheme.darkTextTheme.bodyText1),
+                    backgroundColor: Colors.black.withOpacity(0.7),
+                    onDeleted: () {
+                      print('Delete');
+                    },
+                  ),
+                  Chip(
+                    label: Text('Carrots',
+                        style: FooderlichTheme.darkTextTheme.bodyText1),
+                    backgroundColor: Colors.black.withOpacity(0.7),
+                  ),
+                  Chip(
+                    label: Text('Apple',
+                        style: FooderlichTheme.darkTextTheme.bodyText1),
+                    backgroundColor: Colors.black.withOpacity(0.7),
+                  ),
+                  Chip(
+                    label: Text('Wheat',
+                        style: FooderlichTheme.darkTextTheme.bodyText1),
+                    backgroundColor: Colors.black.withOpacity(0.7),
+                  ),
+                  Chip(
+                    label: Text('Rice',
+                        style: FooderlichTheme.darkTextTheme.bodyText1),
+                    backgroundColor: Colors.black.withOpacity(0.7),
+                  ),
+                  Chip(
+                    label: Text('Maize',
+                        style: FooderlichTheme.darkTextTheme.bodyText1),
+                    backgroundColor: Colors.black.withOpacity(0.7),
+                  ),
+                  Chip(
+                    label: Text('Strawberry',
+                        style: FooderlichTheme.darkTextTheme.bodyText1),
+                    backgroundColor: Colors.black.withOpacity(0.7),
+                  ),
+                  Chip(
+                    label: Text('Grapes',
+                        style: FooderlichTheme.darkTextTheme.bodyText1),
+                    backgroundColor: Colors.black.withOpacity(0.7),
+                  ),
                 ],
               ),
             )
