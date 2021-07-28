@@ -7,7 +7,11 @@ class AuthorCard extends StatelessWidget {
   final String title;
   final ImageProvider imageProvider;
 
-  const AuthorCard({Key key, this.authorName, this.title, this.imageProvider})
+  const AuthorCard({Key key, 
+                    @required this.authorName, 
+                    this.title, 
+                    this.imageProvider
+                    })
       : super(key: key);
 
   @override
@@ -46,7 +50,7 @@ class AuthorCard extends StatelessWidget {
             },
             icon: const Icon(Icons.favorite_border),
             iconSize: 30,
-            color: Colors.grey[400],
+            color: Colors.white,
           )
         ],
       ),
